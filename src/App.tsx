@@ -1,9 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import TaskForm from './components/TaskForm';
+import TaskList from './components/TaskList';
 
 //CSS
 import styles from './App.module.css';
+
+
 
 
 function App() {
@@ -14,11 +18,11 @@ function App() {
         <h1>Bem-vindo ao Anotações Tarefas!</h1>
         <div>
           <h2>O que você vai fazer hoje?</h2>
-          <p>Formulário</p>
+          <TaskForm btnText="Criar Tarefa" />
         </div>
         <div>
           <h2>Suas Tarefas:</h2>
-          <p>Lista</p>
+          <TaskList />
         </div>
       </main>
       <Footer />
