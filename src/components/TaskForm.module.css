@@ -13,16 +13,17 @@
 }
 
 .form input[type="submit"] {
-  background-color: #61dafb;
-  border: 1px solid #282c34;
-  color: #000;
-  transition: .5s ;
+  background-color: #282c34;
+  border: 1px solid #FFF;
+  color: #FFF;
+  transition: .3s ;
   cursor: pointer;
 }
 
 .form input[type="submit"]:hover {
-  background-color: #61fb97;
-  border-color: #FFF;
+  background-color: #61dafb;
+  /* border-color: #282c34; */
+  color:#282c34
 }
 
 .input_container {
