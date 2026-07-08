@@ -14,6 +14,8 @@ function App() {
 
   const [taskList, setTaskList] = useState<ITask[]>([]);
 
+  console.log(taskList);
+
   return (
     <div>
       <Header />
@@ -21,7 +23,7 @@ function App() {
         <h1>Bem-vindo ao Anotações Tarefas!</h1>
         <div>
           <h2>O que você vai fazer hoje?</h2>
-          <TaskForm btnText="Criar Tarefa"  taskList={taskList} setTaskList={setTaskList}/>
+          <TaskForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />
         </div>
         <div>
           <h2>Suas Tarefas:</h2>
