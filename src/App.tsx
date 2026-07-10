@@ -3,12 +3,14 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
+import Modal from './components/Modal';
 
 //CSS
 import styles from './App.module.css';
 
 //Interface
 import { ITask } from './interfaces/Task';
+
 
 function App() {
 
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <Modal children={<TaskForm btnText="Criar Tarefa" taskList={taskList} setTaskList={setTaskList} />} />
       <Header />
       <main className={styles.main}>
         <h1>Bem-vindo ao Anotações Tarefas!</h1>
